@@ -7,7 +7,7 @@ class WeatherManager{
        longitude: CLLocationDegrees) async throws -> ResponseBody {
         
         //Add your API Key Here
-        let APIKey = "286bc32c8f404cadea2e9ce2c641f5ed"
+        let APIKey = ""
         
         guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=\(APIKey)&units=imperial") else {fatalError("Missing URL")}
         
